@@ -48,8 +48,8 @@ numArgs="$#"
 # get last argument
 # ${*} means all arguments
 # ${var:pos} means from pos to end
-echo "'$*' $*"
-echo "'$@' $@"
+# "$*" all parameters in one word "p1 p2 p3"
+# "$@" all parameters in different word "p1" "p2" "p3"
 
 srcfile=${*:$numArgs}
 
