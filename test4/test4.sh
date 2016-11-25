@@ -69,6 +69,24 @@ for entry in `get_backup_files`; do
         cp $srcdir$entry $dstdir$dir
     fi
 done
-        
-    
+
+# Final result will be:
+# liu@liu-VirtualBox:~/lhx/bash/test4$ ls tmp/*
+# tmp/a:
+# a.txt
+#
+# tmp/b:
+# b.txt
+# liu@liu-VirtualBox:~/lhx/bash/test4$ ls backup/*
+# backup/a:
+# backupfilelist
+#
+# backup/b:
+# backupfilelist
+# liu@liu-VirtualBox:~/lhx/bash/test4$ ls restore/*
+# restore/a:
+# a.txt
+#
+# restore/b:
+# b.txt
 
