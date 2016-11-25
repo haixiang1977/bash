@@ -48,6 +48,9 @@ numArgs="$#"
 # get last argument
 # ${*} means all arguments
 # ${var:pos} means from pos to end
+echo "'$*' $*"
+echo "'$@' $@"
+
 srcfile=${*:$numArgs}
 
 echo "zipfile: $zipfile password: $password srcfile: $srcfile"
