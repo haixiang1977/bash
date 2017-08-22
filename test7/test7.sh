@@ -12,3 +12,36 @@ echo "TEST direct expansion $TEST"
 
 echo "TEST in-direct expanstion ${!TEST}"
 
+# more complicated use case
+a="hello world"
+# b indirect to a
+b=a
+# c indirect to b
+c=b
+
+# no expanstion
+echo "a"
+# expansion
+echo "$a"
+# b -> a
+echo "$b"
+# *b = a
+echo "${!b}"
+# c -> b
+echo "$c"
+# *c = b (whose value is a)
+echo "${!c}"
+
+# d -> a
+d=${!c}
+# *d = a
+echo "${!d}"
+
+
+
+
+
+
+
+
+
